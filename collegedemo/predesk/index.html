@@ -103,7 +103,7 @@
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-md-0">
-                                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                <input class="form-control" id="myInput" type="text" placeholder="Search" aria-label="Search">
                             </form>
                         </div>
                     </nav>
@@ -151,7 +151,7 @@
 
 
                 <div id="logdivider"></div>
-                <div>
+                <div id="myDIV">
                     <p class="bg-secondary text-white" id="newstext">
                         <MARQUEE DIRECTION=LEFT>
                             <table>
@@ -177,7 +177,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div id="myDIV">
                     <div class="row">
                         <div class="col-md-12 col-lg-8 col-sm-12">
                             <div>
@@ -411,6 +411,12 @@
 
         <script>$(document).ready(function () {
                 $(".owl-carousel").owlCarousel();
+                $("#myInput").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#myDIV *").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
             });</script>
         <script src="js/owl.carousel.js"></script>
 </body>
