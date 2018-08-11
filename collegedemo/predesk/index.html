@@ -158,25 +158,33 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum
-                                        ad obcaecati
+                                        <p id="news">
+                                            <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum
+                                            ad obcaecati</p>
+                                    </td>
+                                    <td id="newsdivider">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>
+                                        <p id="news">
+                                            <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
 
                                     </td>
                                     <td id="newsdivider">&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                     <td>
-                                        <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing
-                                        elit.
-                                    </td>
-                                    <td id="newsdivider">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                    <td>
-                                        <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing
-                                        elit.
+                                        <p id="news">
+                                            <span class="badge badge-danger">new</span> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
+
                                     </td>
                                 </tr>
                             </table>
                         </MARQUEE>
                     </p>
                 </div>
+
+                <div id="logdivider"></div>
 
                 <div id="myDIV">
                     <div class="row">
@@ -406,7 +414,7 @@
         <script>$(document).ready(function () {
                 $("h4").fitText(2, { 'minFontSize': 22, 'maxFontSize': 50 });
                 $("h5").fitText(3, { 'minFontSize': 17, 'maxFontSize': 50 });
-                $("p").fitText(4, { 'minFontSize': 13, 'maxFontSize': 50 });
+                $("p").fitText(4, { 'minFontSize': 13, 'maxFontSize': 15 });
                 $(".owl-carousel").owlCarousel();
                 $("#myInput").on("keyup", function () {
                     var value = $(this).val().toLowerCase();

@@ -11,11 +11,28 @@
 	width: 100%;
 	height: 100%;
 }
+MARQUEE{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+table{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 #newstext{
-	padding: 7px;
+	padding: 4px;
+	margin: 0;
+	border: 0;
+}
+#news{
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 #newsdivider{
-	width: 70px;
+	width: 50px;
 }
 #welcomeheading{
 	border-bottom: 1px solid rgb(107, 107, 107);
@@ -47,7 +64,7 @@
 	padding-left: 10px;
 }
 .galleryphoto{
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 #importantlinks{
 	padding: 10px;
